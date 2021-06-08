@@ -15,3 +15,5 @@ autocmd VimLeave * call system("xsel -ib", getreg('+'))
 vnoremap <C-c> :w !xclip -selection c<CR><CR>
 " search recursively for a tags file; generate in a dir with `ctags -R *` (exuberant-ctags)
 set tags=./tags;/
+" Disable Ex mode shortcut
+nnoremap Q <Nop>

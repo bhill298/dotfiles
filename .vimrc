@@ -17,3 +17,6 @@ vnoremap <C-c> :w !xclip -selection c<CR><CR>
 set tags=./tags;/
 " Disable Ex mode shortcut
 nnoremap Q <Nop>
+" Disable creastion of .swp files
+" alternative: set backupdir=~/.vim/backup// set directory=~/.vim/swap// set undodir=~/.vim/undo//
+set noswapfile

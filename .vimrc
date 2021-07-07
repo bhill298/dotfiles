@@ -33,6 +33,9 @@ set noswapfile
 "let g:syntastic_check_on_wq = 0
 "let g:syntastic_ocaml_checkers = ['merlin']
 
-" merlin OCaml
-"let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+" OCaml / merlin
+"let g:opamshare = substitute(system('opam var share'),'\n$','','''')
 "execute "set rtp+=" . g:opamshare . "/merlin/vim"
+"let g:ocpindentshare = substitute(system('opam var ocp-indent:share'),'\n$','','''')
+"execute 'autocmd FileType ocaml source' . g:ocpindentshare . '/vim/indent/ocaml.vim'
+

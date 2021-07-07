@@ -20,3 +20,20 @@ nnoremap Q <Nop>
 " Disable creastion of .swp files
 " alternative: set backupdir=~/.vim/backup// set directory=~/.vim/swap// set undodir=~/.vim/undo//
 set noswapfile
+
+" Plugins:
+" clone to ~/.vim/pack/vendor/start then run :helptags ALL in vim as root
+
+" Syntastic plugin (run :lopen to view error messages)
+" https://github.com/vim-syntastic/syntastic
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_ocaml_checkers = ['merlin']
+
+" merlin OCaml
+"let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+"execute "set rtp+=" . g:opamshare . "/merlin/vim"

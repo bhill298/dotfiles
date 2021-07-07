@@ -21,7 +21,7 @@ nnoremap Q <Nop>
 " alternative: set backupdir=~/.vim/backup// set directory=~/.vim/swap// set undodir=~/.vim/undo//
 set noswapfile
 
-" Plugins:
+" Plugins
 " clone to ~/.vim/pack/vendor/start then run :helptags ALL in vim as root
 
 " Syntastic plugin (run :lopen to view error messages)

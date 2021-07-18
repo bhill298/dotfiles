@@ -20,8 +20,8 @@ nnoremap Q <Nop>
 " Disable creastion of .swp files
 " alternative: set backupdir=~/.vim/backup// set directory=~/.vim/swap// set undodir=~/.vim/undo//
 set noswapfile
-set mapleader = "-"
-set maplocalleader = "\\"
+" set mapleader = "-"
+" set maplocalleader = "\\"
 set pastetoggle=<F2>
 
 " Plugins

@@ -23,6 +23,8 @@ set noswapfile
 let mapleader = "-"
 let maplocalleader = "\\"
 set pastetoggle=<F2>
+" enable mouse support
+set mouse=a
 
 " Plugins
 " clone to ~/.vim/pack/vendor/start then run :helptags ALL in vim as root

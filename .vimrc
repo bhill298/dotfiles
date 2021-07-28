@@ -11,8 +11,6 @@ set number
 filetype plugin indent on
 " save the clipboard when vim exits
 autocmd VimLeave * call system("xsel -ib", getreg('+'))
-" may ctrl c copy visual selection (linux, X window system only)
-vnoremap <C-c> :w !xclip -selection c<CR><CR>
 " search recursively for a tags file; generate in a dir with `ctags -R *` (exuberant-ctags)
 set tags=./tags;/
 " Disable Ex mode shortcut
@@ -25,6 +23,9 @@ let maplocalleader = "\\"
 set pastetoggle=<F2>
 " enable mouse support
 set mouse=a
+" set registers to share with system clipboard (works nicely with set mouse=a)
+" requires vim-gui-common package in ubuntu or +xterm_clipboard feature
+set clipboard=unnamedplus
 
 " Plugins
 " clone to ~/.vim/pack/vendor/start then run :helptags ALL in vim as root

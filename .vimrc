@@ -26,6 +26,10 @@ set mouse=a
 " set registers to share with system clipboard (works nicely with set mouse=a)
 " requires vim-gui-common package in ubuntu or +xterm_clipboard feature
 set clipboard=unnamedplus
+" unmess up tmux colors (next 3 lines)
+set term=xterm-256color
+set background=dark
+set t_Co=256
 
 " Plugins
 " clone to ~/.vim/pack/vendor/start then run :helptags ALL in vim as root

@@ -43,6 +43,10 @@ set t_Co=256
 "let g:syntastic_check_on_wq = 0
 "let g:syntastic_ocaml_checkers = ['merlin']
 
+" tabline
+" https://github.com/mkitt/tabline.vim
+
+
 " OCaml / merlin
 "let g:opamshare = substitute(system('opam var share'),'\n$','','''')
 "execute "set rtp+=" . g:opamshare . "/merlin/vim"

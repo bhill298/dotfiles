@@ -32,7 +32,7 @@ set background=dark
 set t_Co=256
 
 " Plugins
-" clone to ~/.vim/pack/vendor/start then run :helptags ALL in vim as root
+" do `git clone <repo> ~/.vim/pack/vendor/start` then run :helptags ALL in vim as root
 
 " Syntastic plugin (run :lopen to view error messages)
 " https://github.com/vim-syntastic/syntastic

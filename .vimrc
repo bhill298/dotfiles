@@ -30,6 +30,21 @@ set clipboard=unnamedplus
 set term=xterm-256color
 set background=dark
 set t_Co=256
+" Remap 'c', 'C', 'd', 'D', 'x' and 'X' to save text in a custom register
+" This prevents these commands from overwriting the system clipboard with unnamedplus
+" However, this hard sets the registers these commands save to, it cannot be changed on the fly
+nnoremap c "cc
+vnoremap c "cc
+nnoremap C "cC
+vnoremap C "cC
+nnoremap d "dd
+vnoremap d "dd
+nnoremap D "dD
+vnoremap D "dD
+nnoremap x "xx
+vnoremap x "xx
+nnoremap X "xX
+vnoremap X "xX
 
 " Plugins
 " do `git clone <repo> ~/.vim/pack/vendor/start/<plugin>` then run :helptags ALL in vim as root

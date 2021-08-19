@@ -52,7 +52,7 @@ vnoremap X "xX
 " Syntastic plugin (run :lopen to view error messages)
 " https://github.com/vim-syntastic/syntastic
 "set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
+""set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_check_on_wq = 0

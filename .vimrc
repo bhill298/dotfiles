@@ -45,6 +45,9 @@ nnoremap x "xx
 vnoremap x "xx
 nnoremap X "xX
 vnoremap X "xX
+" don't overwrite clipboard when visual pasting
+vnoremap p "0p
+vnoremap P "0P
 
 " Plugins
 " do `git clone <repo> ~/.vim/pack/vendor/start/<plugin>` then run :helptags ALL in vim as root

@@ -9,6 +9,8 @@ set timeoutlen=1000 ttimeoutlen=10
 set number
 " stop auto unindent w/ # comments (thinks everything is a preproc directive)
 filetype plugin indent on
+" make vim recognize comments in C so it doesn't mess up brace matching
+runtime macros/matchit.vim
 " save the clipboard when vim exits
 autocmd VimLeave * call system("xsel -ib", getreg('+'))
 " search recursively for a tags file; generate in a dir with `ctags -R *` (exuberant-ctags)

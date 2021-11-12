@@ -66,10 +66,4 @@ vnoremap P "0P
 " tabline
 " https://github.com/mkitt/tabline.vim
 
-
-" OCaml / merlin
-"let g:opamshare = substitute(system('opam var share'),'\n$','','''')
-"execute "set rtp+=" . g:opamshare . "/merlin/vim"
-"let g:ocpindentshare = substitute(system('opam var ocp-indent:share'),'\n$','','''')
-"execute 'autocmd FileType ocaml source' . g:ocpindentshare . '/vim/indent/ocaml.vim'
-
+" for ocaml, do 'opam user-setup install' and it will add lines below

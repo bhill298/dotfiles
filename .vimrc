@@ -51,7 +51,7 @@ vnoremap X "xX
 vnoremap p "0p
 vnoremap P "0P
 
-let asmsytax="nasm"
+let asmsyntax="nasm"
 
 " Plugins
 " do `git clone <repo> ~/.vim/pack/vendor/start/<plugin>` then run :helptags ALL in vim as root

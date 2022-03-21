@@ -59,6 +59,7 @@ let asmsyntax="nasm"
 " Syntastic plugin (run :lopen to view error messages)
 " https://github.com/vim-syntastic/syntastic
 "set statusline+=%#warningmsg#
+"let g:syntastic_quiet_messages = { "!level": "errors"}
 ""set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 "let g:syntastic_always_populate_loc_list = 1

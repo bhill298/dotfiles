@@ -21,4 +21,4 @@ export PATH="$HOME/.local/bin:$PATH"
 alias sudo="sudo "
 export SHELL=/bin/bash
 alias tmux='tmux -2'
-
+set -o ignoreeof

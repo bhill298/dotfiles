@@ -55,6 +55,7 @@ let asmsyntax="nasm"
 
 " Plugins
 " do `git clone <repo> ~/.vim/pack/vendor/start/<plugin>` then run :helptags ALL in vim as root
+" This uses vim's native package manager, added in version 8.0
 
 " Syntastic plugin (run :lopen to view error messages)
 " https://github.com/vim-syntastic/syntastic

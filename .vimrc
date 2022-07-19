@@ -53,6 +53,10 @@ vnoremap P "0P
 
 let asmsyntax="nasm"
 
+" Fix syntax highlighting breaking while scrolling sometimes (may be slow)
+" can also try: syntax sync minlines=200
+" autocmd BufEnter * syntax sync fromstart
+
 " Plugins
 " do `git clone <repo> ~/.vim/pack/vendor/start/<plugin>` then run :helptags ALL in vim as root
 " This uses vim's native package manager, added in version 8.0

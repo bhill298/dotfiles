@@ -57,12 +57,59 @@ let asmsyntax="nasm"
 " can also try: syntax sync minlines=200
 " autocmd BufEnter * syntax sync fromstart
 
+" enable default vim omni completion (<C-x><C-o>)
+set omnifunc=syntaxcomplete#Complete
+" auto close omni completion preview window on exiting insert or finishing completion
+autocmd CursorMovedI *  if pumvisible() == 0|silent! pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
+
+
 " Plugins
 " do `git clone <repo> ~/.vim/pack/vendor/start/<plugin>` then run :helptags ALL in vim as root
 " This uses vim's native package manager, added in version 8.0
 
-" Syntastic plugin (run :lopen to view error messages)
+" fugitive - git support for vim (required by fzf and maybe some others for git support)
+" https://github.com/tpope/vim-fugitive.git
+" Install:
+" git clone https://github.com/tpope/vim-fugitive.git ~/.vim/pack/vendor/start/vim-fugitive.git
+
+" fzf.vim - fuzzy search for vim
+" https://github.com/junegunn/fzf.vim
+" Install: 
+" git clone https://github.com/junegunn/fzf.git ~/.vim/pack/vendor/start/fzf && ~/.vim/pack/vendor/start/fzf/install --binary
+" git clone https://github.com/junegunn/fzf.vim.git ~/.vim/pack/vendor/start/fzf.vim
+" fzf install requires a network connection, binary is placed in ~/.vim/pack/vendor/start/fzf/bin/fzf
+"nnoremap <Leader>b :<C-u>Buffers<CR>
+"nnoremap <Leader>f :<C-u>GitFiles<CR>
+"nnoremap <Leader>F :<C-u>Files<CR>
+"nnoremap <Leader>t :<C-u>Tags<CR>
+"nnoremap <Leader>c :<C-u>BCommits<CR>
+"nnoremap <Leader>C :<C-u>Commits<CR>
+" Useful commands
+" Enter replaces current buffer, C-t new tab, C-x new split, C-v new vertical split
+" files in given directory, default to cwd
+" :Files
+" # if in git repo, shows files from git root tracked by git
+" :GitFiles
+" # open buffers
+" :Buffers
+" # open windows
+" :Windows
+" # git commit history
+" :Commits
+" # git commits of file
+" :BCommits
+" # vim commands
+" :Commands
+" # file history, [:] is command history, [/] is search history
+" :History[:/] 
+" # search tags if present
+" :Tags
+
+" Syntastic plugin - syntax checking for vim (run :lopen to view error messages)
 " https://github.com/vim-syntastic/syntastic
+" Install:
+" git clone https://github.com/vim-syntastic/syntastic ~/.vim/pack/vendor/start/syntastic
 "set statusline+=%#warningmsg#
 "let g:syntastic_quiet_messages = { "!level": "errors"}
 ""set statusline+=%{SyntasticStatuslineFlag()}
@@ -71,7 +118,9 @@ let asmsyntax="nasm"
 "let g:syntastic_check_on_wq = 0
 "let g:syntastic_ocaml_checkers = ['merlin']
 
-" tabline
+" tabline - configure tab labels in vim
 " https://github.com/mkitt/tabline.vim
+" Install:
+" git clone https://github.com/mkitt/tabline.vim ~/.vim/pack/vendor/start/tabline.vim
 
 " for ocaml, do 'opam user-setup install' and it will add lines below

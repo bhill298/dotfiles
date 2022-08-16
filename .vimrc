@@ -63,6 +63,10 @@ set omnifunc=syntaxcomplete#Complete
 autocmd CursorMovedI *  if pumvisible() == 0|silent! pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
 
+" If needed, fix weird characters being inserted in vim 8.2
+"set t_TI=
+"set t_TE=
+
 
 " Plugins
 " do `git clone <repo> ~/.vim/pack/vendor/start/<plugin>` then run :helptags ALL in vim as root

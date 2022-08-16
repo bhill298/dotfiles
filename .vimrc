@@ -76,7 +76,7 @@ autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
 " fzf.vim - fuzzy search for vim
 " https://github.com/junegunn/fzf.vim
 " Install: 
-" git clone https://github.com/junegunn/fzf.git ~/.vim/pack/vendor/start/fzf && ~/.vim/pack/vendor/start/fzf/install --binary
+" git clone https://github.com/junegunn/fzf.git ~/.vim/pack/vendor/start/fzf && ~/.vim/pack/vendor/start/fzf/install --bin
 " git clone https://github.com/junegunn/fzf.vim.git ~/.vim/pack/vendor/start/fzf.vim
 " fzf install requires a network connection, binary is placed in ~/.vim/pack/vendor/start/fzf/bin/fzf
 "nnoremap <Leader>b :<C-u>Buffers<CR>

@@ -24,6 +24,8 @@ set noswapfile
 let mapleader = "-"
 let maplocalleader = "\\"
 set pastetoggle=<F2>
+" toggle line numbers
+nnoremap <F3> :set nonumber!<CR>
 " enable mouse support
 set mouse=a
 " set registers to share with system clipboard (works nicely with set mouse=a)

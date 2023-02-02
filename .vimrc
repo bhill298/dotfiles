@@ -129,5 +129,21 @@ autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
 " https://github.com/mkitt/tabline.vim
 " Install:
 " git clone https://github.com/mkitt/tabline.vim ~/.vim/pack/vendor/start/tabline.vim
+" Custom patch to tabline.vim/plugin/tabline.vim to add full paths if desired (`patch tabline.vim -i tabline.patch`):
+""""
+" 16a17,19
+" > if !exists("g:tabline_full_path")
+" >     let g:tabline_full_path = 0
+" > endif
+" 31c34,38
+" <     let s .= (bufname != '' ? '['. fnamemodify(bufname, ':t') . '] ' : '[No Name] ')
+" ---
+" >     if g:tabline_full_path
+" >         let s .= (bufname != '' ? '['. bufname . '] ' : '[No Name] ')
+" >     else
+" >         let s .= (bufname != '' ? '['. fnamemodify(bufname, ':t') . '] ' : '[No Name] ')
+" >     endif
+""""
+" let g:tabline_full_path = 1 
 
 " for ocaml, do 'opam user-setup install' and it will add lines below

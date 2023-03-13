@@ -1,5 +1,5 @@
 set encoding=utf-8
-set textwidth=100
+" set textwidth=100
 set tabstop=4
 set shiftwidth=4
 set expandtab

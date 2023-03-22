@@ -22,3 +22,11 @@ alias sudo="sudo "
 export SHELL=/bin/bash
 alias tmux='tmux -2'
 set -o ignoreeof
+
+# (Ctrl-R reverse cmd search, Ctrl-T regular search, Alt-C dir search) <prefix>**<TAB> for tab complete
+if [ -e $HOME/.vim/pack/vendor/start/fzf/shell/key-bindings.bash ]; then
+    source $HOME/.vim/pack/vendor/start/fzf/shell/key-bindings.bash
+fi
+if [ -e $HOME/.vim/pack/vendor/start/fzf/shell/completion.bash ]; then
+    source $HOME/.vim/pack/vendor/start/fzf/shell/completion.bash
+fi

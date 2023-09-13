@@ -58,12 +58,6 @@ let asmsyntax="nasm"
 " can also try: syntax sync minlines=200
 " autocmd BufEnter * syntax sync fromstart
 
-" enable default vim omni completion (<C-x><C-o>)
-set omnifunc=syntaxcomplete#Complete
-" auto close omni completion preview window on exiting insert or finishing completion
-autocmd CursorMovedI *  if pumvisible() == 0|silent! pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
-
 " Plugins
 " do `git clone <repo> ~/.vim/pack/vendor/start/<plugin>` then run :helptags ALL in vim (ignore errors)
 
@@ -109,15 +103,5 @@ nnoremap <Leader>C :<C-u>Commits<CR>
 " https://github.com/mkitt/tabline.vim
 " Install:
 " git clone https://github.com/mkitt/tabline.vim ~/.vim/pack/vendor/start/tabline.vim
-
-" Syntastic plugin (run :lopen to view error messages)
-" https://github.com/vim-syntastic/syntastic
-set statusline+=%#warningmsg#
-let g:syntastic_quiet_messages = { "!level": "errors"}
-"set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_ocaml_checkers = ['merlin']
 
 " for ocaml, do opam user-setup install and it will add lines below

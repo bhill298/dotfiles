@@ -24,6 +24,8 @@ set noswapfile
 let mapleader = "-"
 let maplocalleader = "\\"
 set pastetoggle=<F2>
+" control + L hides current search highlight
+nnoremap <nowait><silent> <C-L> :noh<CR>
 " enable mouse support
 set mouse=a
 " set registers to share with system clipboard (works nicely with set mouse=a)

@@ -102,6 +102,8 @@ nnoremap <Leader>C :<C-u>Commits<CR>
 nnoremap <Leader>x :<C-u>History:<CR>
 nnoremap <Leader>l :<C-u>:BLines<CR>
 nnoremap <Leader>L :<C-u>:Lines<CR>
+" requires ripgrep sudo apt install ripgrep (also RG to launch on every input)
+nnoremap <Leader>g :<C-u>:Rg<CR>
 " Useful commands
 " Enter replaces current buffer, C-t new tab, C-x new split, C-v new vertical split
 " files in given directory, default to cwd

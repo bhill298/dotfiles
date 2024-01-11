@@ -41,6 +41,9 @@ set switchbuf+=usetab,newtab
 "nnoremap gs :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 nnoremap <silent> gs :execute "Grep " . '"' . expand("<cword>") . '"'<CR>
 nnoremap <silent> gS :execute "Grep " . '"' . expand("<cWORD>") . '"'<CR>
+" go to next, previous buffer (also consiter C-^ for alternate file)
+nnoremap <silent> gb :<C-u>bn<CR>
+nnoremap <silent> gB :<C-u>bp<CR>
 " merges the current pane (vertically) to next tab, then merges to previous tab
 " Moving to prev tab is a bit wonky in that it merges to the right at first
 nnoremap mt :call MoveToNextTab()<CR><C-w>H

@@ -20,7 +20,7 @@ runtime macros/matchit.vim
 " save the clipboard when vim exits
 autocmd VimLeave * call system("xsel -ib", getreg('+'))
 " on space in a quickfix window, close all quickfix windows in all tabs
-autocmd FileType qf nnoremap <silent><buffer> <Space> <CR>:tabdo cclose<CR>
+autocmd FileType qf nnoremap <silent><buffer> <Space> <CR>:TabDo cclose<CR>
 " disable quickfix highlight (can also use ctermbg=black to be less obnoxious)
 hi QuickFixLine guibg=NONE ctermbg=none
 " search recursively for a tags file; generate in a dir with `ctags -R *` (exuberant-ctags)
@@ -243,3 +243,12 @@ function! Grep(...)
   call delete(tmpfile)
 endfunction
 command! -nargs=* -complete=file Grep call Grep(<f-args>)
+
+" :tabdo except it returns to the start tab after it's done, rather than
+" ending up on the final tab
+function! TabDo(cmd)
+    let current_tab = tabpagenr()
+    execute 'tabdo' a:cmd
+    execute 'tabnext' current_tab
+endfunction
+command! -nargs=1 TabDo call TabDo(<f-args>)

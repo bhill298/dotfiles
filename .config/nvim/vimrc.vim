@@ -229,9 +229,18 @@ let asmsyntax="nasm"
 " git clone https://github.com/junegunn/fzf.vim.git ~/.vim/pack/vendor/start/fzf.vim
 " fzf install requires a network connection, binary is placed in ~/.vim/pack/vendor/start/fzf/bin/fzf
 " override default rg command
+"function! RgCmd(arg)
+"    return "rg --column --line-number --no-heading --color=always --smart-case " . a:arg . " " . g:rg_extra . " -- "
+"endfunction
 "command! -bang -nargs=* Rg
 "  \ call fzf#vim#grep(
-"  \   "rg --column --line-number --no-heading --color=always --smart-case " . g:rg_extra . " -- ".shellescape(<q-args>),
+"  \   RgCmd("").shellescape(<q-args>),
+"  \   1,
+"  \   fzf#vim#with_preview(),
+"  \   <bang>0)
+"command! -bang -nargs=* Rgf
+"  \ call fzf#vim#grep(
+"  \   RgCmd("-F"). '"' . <q-args> .'"',
 "  \   1,
 "  \   fzf#vim#with_preview(),
 "  \   <bang>0)
@@ -245,7 +254,9 @@ let asmsyntax="nasm"
 "nnoremap <Leader>l :<C-u>:BLines<CR>
 "nnoremap <Leader>L :<C-u>:Lines<CR>
 " requires ripgrep sudo apt install ripgrep (also RG to launch on every input)
-"nnoremap <Leader>g :<C-u>:Rg<CR>
+"nnoremap <Leader>s :<C-u>:Rg<CR>
+"nnoremap <Leader>g :execute "Rgf " . expand("<cword>")<CR>
+"nnoremap <Leader>G :execute "Rgf " . expand("<cWORD>")<CR>
 " Useful commands
 " Enter replaces current buffer, C-t new tab, C-x new split, C-v new vertical split
 " files in given directory, default to cwd

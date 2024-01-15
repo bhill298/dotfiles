@@ -62,7 +62,7 @@ function! Grep(...)
     return
   endif
   if a:0 == 1
-    let options = '-rsFnI ' . g:grep_extra
+    let options = '-rsFnwI ' . g:grep_extra
     let pattern = a:1
     let dir = ''
   else

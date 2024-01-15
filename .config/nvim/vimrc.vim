@@ -163,7 +163,7 @@ let maplocalleader = "\\"
 nnoremap <nowait><silent> <C-L> :noh<CR>
 " open a new tab page before loading the buffer to switch to (newtab)
 " also use an existing tab if it already exists (usetab)
-set switchbuf+=usetab
+"set switchbuf+=usetab
 " grep in current directory under cursor (opens a quickfix window)
 " this replaces the default gs sleep for 1s keybinding, which is useuless
 "nnoremap gs :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>

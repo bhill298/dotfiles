@@ -228,6 +228,12 @@ let asmsyntax="nasm"
 " git clone https://github.com/junegunn/fzf.git ~/.vim/pack/vendor/start/fzf && ~/.vim/pack/vendor/start/fzf/install --bin
 " git clone https://github.com/junegunn/fzf.vim.git ~/.vim/pack/vendor/start/fzf.vim
 " fzf install requires a network connection, binary is placed in ~/.vim/pack/vendor/start/fzf/bin/fzf
+" for syntax highlighting preview: sudo apt install bat && ln -s /usr/bin/batcat $HOME/bin/bat
+" delta for git diffs: sudo apt install ./file.deb from https://github.com/dandavison/delta/releases (use the musl version to avoid libc conflicts)
+" Tags and Helptags require `perl`
+" Commands:
+" Enter replaces current buffer, C-t new tab, C-x new split, C-v new vertical split
+"
 " override default rg command
 "function! RgCmd(arg)
 "    return "rg --column --line-number --no-heading --color=always --smart-case " . a:arg . " " . g:rg_extra . " -- "
@@ -257,26 +263,6 @@ let asmsyntax="nasm"
 "nnoremap <Leader>s :<C-u>:Rg<CR>
 "nnoremap <Leader>g :execute "Rgf " . expand("<cword>")<CR>
 "nnoremap <Leader>G :execute "Rgf " . expand("<cWORD>")<CR>
-" Useful commands
-" Enter replaces current buffer, C-t new tab, C-x new split, C-v new vertical split
-" files in given directory, default to cwd
-" :Files
-" # if in git repo, shows files from git root tracked by git
-" :GitFiles
-" # open buffers
-" :Buffers
-" # open windows
-" :Windows
-" # git commit history
-" :Commits
-" # git commits of file
-" :BCommits
-" # vim commands
-" :Commands
-" # file history, [:] is command history, [/] is search history
-" :History[:/]
-" # search tags if present
-" :Tags
 
 " tabline - configure tab labels in vim
 " https://github.com/mkitt/tabline.vim

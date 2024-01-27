@@ -1,0 +1,7 @@
+# execute current file (must be executable)
+map x $$f
+# execute in a separate window (show output)
+map X !$f
+
+# dedicated key for file opener actions
+map o :open $$f

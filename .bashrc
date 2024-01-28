@@ -28,6 +28,7 @@ fi
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export VISUAL=nvim
+export EDITOR=nvim
 alias vim=nvim
 alias sudo="sudo "
 # list dotfiles

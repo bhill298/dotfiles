@@ -19,25 +19,40 @@ HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=100000
-HISTFILESIZE=100000
+HISTSIZE=1000000
+HISTFILESIZE=1000000
+
 # disable feature where Ctrl-S stops terminal updating
 if [[ -t 0 && $- = *i* ]]; then
     stty -ixon
 fi
+
+# Ctrl-D doesn't kill the shell
+set -o ignoreeof
+
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export VISUAL=nvim
 export EDITOR=nvim
+export SHELL=/bin/bash
+
 alias vim=nvim
 alias sudo="sudo "
 # list dotfiles
 alias la='ls -A'
 # list dotfiles, long format
 alias ll='ls -Al'
-export SHELL=/bin/bash
 alias tmux='tmux -2'
-set -o ignoreeof
+
+# kill all running jobs
+function killj {
+    # clear the running jobs list first
+    jobs > /dev/null
+    running_jobs=$(jobs -p)
+    if [[ -n "$running_jobs" ]]; then
+        kill -9 $running_jobs
+    fi
+}
 
 # (Ctrl-R reverse cmd search, Ctrl-T regular search, Alt-C dir search) <prefix>**<TAB> for tab complete
 # `git clone https://github.com/junegunn/fzf .fzf` then `cd .fzf && ./install --bin && ln -s $HOME/bin/.fzf/bin/fzf $HOME/bin/fzf`

@@ -35,6 +35,8 @@ export PATH="$HOME/.local/bin:$PATH"
 export VISUAL=nvim
 export EDITOR=nvim
 export SHELL=/bin/bash
+# fix other+write background to be readable for some terminal color schemes
+#export LS_COLORS=":$LS_COLORS:ow=94;42:"
 
 alias vim=nvim
 alias sudo="sudo "
@@ -43,6 +45,7 @@ alias la='ls -A'
 # list dotfiles, long format
 alias ll='ls -Al'
 alias tmux='tmux -2'
+alias FUCK='sudo $(history -p \!\!)'
 
 # kill all running jobs
 function killj {

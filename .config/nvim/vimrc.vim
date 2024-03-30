@@ -130,6 +130,8 @@ endfunction
 " autocmd BufRead */dir/path* cmd1 | cmd2 ...
 
 " Settings
+" in terminal mode, esc returns to normal mode (enter in current pane with :term)
+:tnoremap <Esc> <C-\><C-n>
 call ExcludeFiles(["tags", ".git/"])
 set encoding=utf-8
 set tabstop=4

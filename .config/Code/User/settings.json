@@ -4,7 +4,7 @@
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/local/bin/nvim",
     "vim.vimrc.path": "~/.config/nvim/vimrc.vim",
-    "editor.fontFamily": "Fira Code"
+    "editor.fontFamily": "Fira Code",
     "vim.vimrc.enable": true,
     "redhat.telemetry.enabled": false,
     "git.openRepositoryInParentFolders": "never",

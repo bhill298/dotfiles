@@ -4,6 +4,7 @@
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/local/bin/nvim",
     "vim.vimrc.path": "~/.config/nvim/vimrc.vim",
+    // https://github.com/tonsky/FiraCode/wiki/Installing
     "editor.fontFamily": "Fira Code",
     "vim.vimrc.enable": true,
     "redhat.telemetry.enabled": false,
@@ -16,5 +17,6 @@
     "vim.smartcase": false,
     "vim.ignorecase": false,
     "vim.useSystemClipboard": true,
-    "editor.fontLigatures": true
+    // https://github.com/tonsky/FiraCode/wiki/How-to-enable-stylistic-sets
+    "editor.fontLigatures": "'ss08', 'cv24', 'ss05', 'ss03'",
 }

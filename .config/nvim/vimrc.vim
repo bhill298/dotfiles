@@ -189,6 +189,7 @@ set mouse=a
 set clipboard=unnamedplus
 " unmess up tmux colors (next 3 lines)
 set background=dark
+set backspace=indent,eol,start
 set t_Co=256
 " Remap 'c', 'C', 'd', 'D', 'x' and 'X' to save text in a custom register
 " This prevents these commands from overwriting the system clipboard with unnamedplus

@@ -1,0 +1,20 @@
+{
+    "http.proxy": "http://proxy.sandia.gov:80",
+    "http.proxyAuthorization": null,
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/local/bin/nvim",
+    "vim.vimrc.path": "~/.config/nvim/vimrc.vim",
+    "editor.fontFamily": "Fira Code"
+    "vim.vimrc.enable": true,
+    "redhat.telemetry.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.autoClosingBrackets": "never",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "editor.mouseWheelScrollSensitivity": 2,
+    "workbench.colorTheme": "Default Light+",
+    "python.analysis.typeCheckingMode": "basic",
+    "vim.smartcase": false,
+    "vim.ignorecase": false,
+    "vim.useSystemClipboard": true,
+    "editor.fontLigatures": true
+}

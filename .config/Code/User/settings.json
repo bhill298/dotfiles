@@ -21,4 +21,5 @@
     "editor.fontLigatures": "'ss08', 'cv24', 'ss05', 'ss03'",
     "window.titleBarStyle": "custom",
     "window.commandCenter": true,
+    "terminal.integrated.sendKeybindingsToShell": true,
 }

@@ -1,0 +1,29 @@
+set nobackup
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nocompatible
+set backspace=indent,eol,start
+set clipboard=unnamedplus
+set mouse=a
+nnoremap y "*y
+nnoremap c "cc
+vnoremap c "cc
+nnoremap C "cC
+vnoremap C "cC
+nnoremap d "dd
+vnoremap d "dd
+nnoremap D "dD
+vnoremap D "dD
+nnoremap x "xx
+vnoremap x "xx
+nnoremap X "xX
+vnoremap X "xX
+vnoremap X "xX
+" don't overwrite clipboard when visual pasting
+vnoremap p "0p
+vnoremap P "0P
+set noswapfile
+
+let asmsyntax="nasm"

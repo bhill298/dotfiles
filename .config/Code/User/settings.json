@@ -32,4 +32,5 @@
     "html.autoClosingTags": false,
     "javascript.autoClosingTags": false,
     "typescript.autoClosingTags": false,
+    "vim.highlightedyank.enable": true,
 }

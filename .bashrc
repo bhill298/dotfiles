@@ -46,6 +46,12 @@ alias la='ls -A'
 alias ll='ls -Al'
 alias tmux='tmux -2'
 alias FUCK='sudo $(history -p \!\!)'
+lsc() {
+    ls -l "$@" | echo $(($(wc -l) -1))
+}
+lac() {
+    ls -Al "$@" | echo $(($(wc -l) -1))
+}
 
 # kill all running jobs
 function killj {

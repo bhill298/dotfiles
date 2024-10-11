@@ -163,6 +163,10 @@ let maplocalleader = "\\"
 "set pastetoggle=<F2>
 " control + L hides current search highlight
 nnoremap <nowait><silent> <C-L> :noh<CR>
+" Fix color theme for newer nvim (too dark by default)
+set notermguicolors
+" silent! here to ignore on error since this scheme doesn't exist in older versions
+silent! colorscheme vim
 " open a new tab page before loading the buffer to switch to (newtab)
 " also use an existing tab if it already exists (usetab)
 "set switchbuf+=usetab

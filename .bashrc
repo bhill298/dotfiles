@@ -12,6 +12,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+alias lsh='ls --hyperlink=always'
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -46,6 +47,14 @@ alias la='ls -A'
 alias ll='ls -Al'
 alias tmux='tmux -2'
 alias FUCK='sudo $(history -p \!\!)'
+alias ctags='ctags --links=no'
+alias IP="ifconfig -a etho0 | head -2 | tail -1 | tr -s ' ' | cut -d' ' -f 3"
+# store apt installed packages with dates
+alias GET_PACKAGES="find /var/lib/dpkg/info -name \"*.list\" -exec stat -c $'%n\t%y' {} \; | sed -e 's,/var/lib/dpkg/info/,,' -e 's,\.list\t,\t,' | sort -k2 > ~/.dpkglist.dates"
+# launch in background
+lbg() {
+    $@ > /dev/null 2>&1 & disown
+}
 lsc() {
     ls -l "$@" | echo $(($(wc -l) -1))
 }
@@ -60,6 +69,15 @@ vsg() {
 }
 vsrg() {
     rg -n --no-heading --color=always "$@" | sed -E 's/^([^:]+:[^[:digit:]]+[[:digit:]]+[^:]+:)/\1 /'
+}
+notes() {
+    # need to replace / with \/ and also delete the first ls line
+    #ls -Altd ~/notes/* | sed 1d | head -n 6 | sed "s/${HOME//\//\\/}/~/"
+    count=$1
+    if [ -z "$count" ]; then
+        count=6
+    fi
+    ls --hyperlink=always -Altd ~/notes/* | sed 1d | head -n $count
 }
 
 # kill all running jobs

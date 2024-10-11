@@ -52,6 +52,15 @@ lsc() {
 lac() {
     ls -Al "$@" | echo $(($(wc -l) -1))
 }
+# these are to be used in vscode to have full color in matches and clickable file + lines
+# I use sed here, which is unfortunate because it doesn't have non-greedy widcards
+# this is also complicated by the fact that we have to work around color control codes
+vsg() {
+    grep -n --color=always "$@" | sed -E 's/^([^:]+:[^[:digit:]]+[[:digit:]]+[^:]+:)/\1 /'
+}
+vsrg() {
+    rg -n --no-heading --color=always "$@" | sed -E 's/^([^:]+:[^[:digit:]]+[[:digit:]]+[^:]+:)/\1 /'
+}
 
 # kill all running jobs
 function killj {

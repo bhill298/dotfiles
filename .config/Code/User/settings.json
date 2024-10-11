@@ -12,7 +12,7 @@
     "editor.autoClosingBrackets": "never",
     "workbench.editor.editorActionsLocation": "hidden",
     "editor.mouseWheelScrollSensitivity": 2,
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Default Light Modern",
     "python.analysis.typeCheckingMode": "basic",
     "vim.smartcase": false,
     "vim.ignorecase": false,

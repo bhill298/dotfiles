@@ -77,7 +77,7 @@ notes() {
     if [ -z "$count" ]; then
         count=6
     fi
-    ls --hyperlink=always -Altd ~/notes/* | sed 1d | head -n $count
+    ls --hyperlink=always -Altd ~/notes/* | head -n $count
 }
 
 # kill all running jobs

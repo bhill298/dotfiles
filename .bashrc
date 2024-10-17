@@ -79,6 +79,27 @@ notes() {
     fi
     ls --hyperlink=always -Altd ~/notes/* | head -n $count
 }
+hex() {
+    echo 0x$((16#$1))
+}
+0x() {
+    echo $((0x$1))
+}
+py() {
+    cmd=''
+    if type python3 &> /dev/null; then
+        cmd='python3'
+    elif type python &> /dev/null; then
+        cmd='python'
+    elif type python2 &> /dev/null; then
+        cmd='python2'
+    fi
+    if [ -z "$cmd" ]; then
+        echo 'python not found'
+    else
+        $cmd -c "print($1)"
+    fi
+}
 
 # kill all running jobs
 function killj {

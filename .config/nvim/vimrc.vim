@@ -1,4 +1,5 @@
 " ~/.config/nvim/init.vim OR :exe 'edit '.stdpath('config').'/init.vim'
+" In windows, this is located in the %LOCALAPPDATA%\nvim folder
 " see :help nvim-from-vim
 " then put packages in ~/.config/nvim/pack/plugins/start
 " :scriptnames to see what's loaded

@@ -34,4 +34,5 @@
     "typescript.autoClosingTags": false,
     "vim.highlightedyank.enable": true,
     "workbench.editor.titleScrollbarSizing": "large",
+    "editor.acceptSuggestionOnCommitCharacter": false
 }

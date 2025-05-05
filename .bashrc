@@ -20,16 +20,16 @@ alias lh='ls --hyperlink=always'
 #export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 #export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 #export NIX_SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
-#http_proxy="http://proxy.XXX.YYY:80/"
-#https_proxy="http://proxy.XXX.YYY:80/"
-#ftp_proxy="http://proxy.XXX.YYY:80/"
-#socks_proxy="http://proxy.XXX.YYY:80/"
-#rsync_proxy="http://proxy.XXX.YYY:80/"
-#no_proxy="127.0.0.1,localhost,*.XXX.YYY,.XXX.YYY,XXX.YYY,::1,10.,172.16.,172.17.,192.168.,*.local,.local,169.254/16"
-#HTTP_PROXY="http://proxy.XXX.YYY:80/"
-#HTTPS_PROXY="http://proxy.XXX.YYY:80/"
-#FTP_PROXY="http://proxy.XXX.YYY:80/"
-#NO_PROXY="127.0.0.1,localhost,*.XXX.YYY,.XXX.YYY,XXX.YYY,::1,10.,172.16.,172.17.,192.168.,*.local,.local,169.254/16"
+#export http_proxy="http://proxy.XXX.YYY:80/"
+#export https_proxy="http://proxy.XXX.YYY:80/"
+#export ftp_proxy="http://proxy.XXX.YYY:80/"
+#export socks_proxy="http://proxy.XXX.YYY:80/"
+#export rsync_proxy="http://proxy.XXX.YYY:80/"
+#export no_proxy="127.0.0.1,localhost,*.XXX.YYY,.XXX.YYY,XXX.YYY,::1,10.,172.16.,172.17.,192.168.,*.local,.local,169.254/16"
+#export HTTP_PROXY="http://proxy.XXX.YYY:80/"
+#export HTTPS_PROXY="http://proxy.XXX.YYY:80/"
+#export FTP_PROXY="http://proxy.XXX.YYY:80/"
+#export NO_PROXY="127.0.0.1,localhost,*.XXX.YYY,.XXX.YYY,XXX.YYY,::1,10.,172.16.,172.17.,192.168.,*.local,.local,169.254/16"
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options

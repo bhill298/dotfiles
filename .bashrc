@@ -14,6 +14,23 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 alias lh='ls --hyperlink=always'
 
+# proxy config if needed (can also set in /etc/environment)
+# update-ca-certificates after putting certs w/ 644 permissions in /usr/local/share/ca-certificates or /usr/share/ca-certificates (depending on distro)
+# may also need to update /etc/ca-certificates.conf
+#export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+#export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+#export NIX_SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+#http_proxy="http://proxy.XXX.YYY:80/"
+#https_proxy="http://proxy.XXX.YYY:80/"
+#ftp_proxy="http://proxy.XXX.YYY:80/"
+#socks_proxy="http://proxy.XXX.YYY:80/"
+#rsync_proxy="http://proxy.XXX.YYY:80/"
+#no_proxy="127.0.0.1,localhost,*.XXX.YYY,.XXX.YYY,XXX.YYY,::1,10.,172.16.,172.17.,192.168.,*.local,.local,169.254/16"
+#HTTP_PROXY="http://proxy.XXX.YYY:80/"
+#HTTPS_PROXY="http://proxy.XXX.YYY:80/"
+#FTP_PROXY="http://proxy.XXX.YYY:80/"
+#NO_PROXY="127.0.0.1,localhost,*.XXX.YYY,.XXX.YYY,XXX.YYY,::1,10.,172.16.,172.17.,192.168.,*.local,.local,169.254/16"
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth

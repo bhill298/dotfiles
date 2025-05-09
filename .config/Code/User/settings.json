@@ -34,5 +34,8 @@
     "typescript.autoClosingTags": false,
     "vim.highlightedyank.enable": true,
     "workbench.editor.titleScrollbarSizing": "large",
-    "editor.acceptSuggestionOnCommitCharacter": false
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "todohighlight.keywords": [
+        "XXX:"
+    ]
 }

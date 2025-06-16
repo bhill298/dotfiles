@@ -218,6 +218,9 @@ vnoremap P "0P
 
 let asmsyntax="nasm"
 
+" show file line:col in status line at the bottom bar
+set statusline+=%F\ %l\:%c
+
 " Fix syntax highlighting breaking while scrolling sometimes (may be slow)
 " can also try: syntax sync minlines=200
 "autocmd BufEnter * syntax sync fromstart

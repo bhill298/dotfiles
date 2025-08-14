@@ -24,7 +24,7 @@ function Invoke-Environment {
 
 # vcvars32.bat vcvars64.bat needs to be on path
 # e.g. C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\
-function vcvars { Invoke-Environment $(which vcvars64.bat) }
-function vcvars32 { Invoke-Environment $(which vcvars32.bat) }
+function vcvars { Invoke-Environment  $((get-command vcvars64.bat).Path) }
+function vcvars32 { Invoke-Environment  $((get-command vcvars32.bat).Path) }
 function dh { Set-PSReadlineOption -HistorySaveStyle SaveNothing }
 function StopSound { (New-Object Media.SoundPlayer).Stop() }

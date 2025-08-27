@@ -68,6 +68,7 @@ alias ctags='ctags --links=no'
 alias IP="ifconfig -a etho0 | head -2 | tail -1 | tr -s ' ' | cut -d' ' -f 3"
 # store apt installed packages with dates
 alias GET_PACKAGES="find /var/lib/dpkg/info -name \"*.list\" -exec stat -c $'%n\t%y' {} \; | sed -e 's,/var/lib/dpkg/info/,,' -e 's,\.list\t,\t,' | sort -k2 > ~/.dpkglist.dates"
+alias xo='xdg-open'
 # launch in background
 lbg() {
     $@ > /dev/null 2>&1 & disown

@@ -28,9 +28,6 @@
     "editor.rulers": [
         120
     ],
-    "find-it-faster.general.killTerminalAfterUse": true,
-    "find-it-faster.general.hideTerminalAfterSuccess": false,
-    "find-it-faster.general.hideTerminalAfterFail": false,
     "html.autoClosingTags": false,
     "javascript.autoClosingTags": false,
     "typescript.autoClosingTags": false,

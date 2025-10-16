@@ -129,6 +129,7 @@ function killj {
     fi
 }
 
+# if apt installed in Ubuntu, this will be in /usr/share/doc/fzf/examples/key-bindings.bash and /usr/share/bash-completion/completions/fzf
 # (Ctrl-R reverse cmd search, Ctrl-T regular search, Alt-C dir search) <prefix>**<TAB> for tab complete
 # `git clone https://github.com/junegunn/fzf .fzf` then `cd .fzf && ./install --bin && ln -s $HOME/bin/.fzf/bin/fzf $HOME/bin/fzf`
 if [ -e $HOME/bin/.fzf/shell/key-bindings.bash ]; then

@@ -2,7 +2,9 @@
     "http.proxy": "http://proxy.sandia.gov:80",
     "http.proxyAuthorization": null,
     "vim.enableNeovim": true,
+    // "vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
     "vim.neovimPath": "/usr/local/bin/nvim",
+    // "vim.vimrc.path": "C:\\Users\\brehill\\AppData\\Local\\nvim\\vimrc.vim"
     "vim.vimrc.path": "~/.config/nvim/vimrc.vim",
     // https://github.com/tonsky/FiraCode/wiki/Installing
     "editor.fontFamily": "Fira Code",

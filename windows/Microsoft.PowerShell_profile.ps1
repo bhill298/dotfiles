@@ -4,6 +4,8 @@ Set-PSReadLineKeyHandler -Chord Ctrl-e -Function EndOfLine
 Set-PSReadLineKeyHandler -Chord Ctrl+u -Function BackwardDeleteLine
 Set-PSReadLineKeyHandler -Chord Ctrl+k -Function ForwardDeleteLine
 
+$env:EDITOR = "vim"
+
 # source: https://github.com/majkinetor/posh/blob/master/MM_Admin/Invoke-Environment.ps1
 function Invoke-Environment {
     param

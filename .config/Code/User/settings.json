@@ -23,6 +23,8 @@
     "editor.fontLigatures": "'ss08', 'cv24', 'ss05', 'ss03'",
     "window.titleBarStyle": "custom",
     "window.commandCenter": true,
+    // set this to set up environment (e.g. ~/.bashrc) for each integrated terminal rather than inheriting from when vscode started up (default true)
+    //"terminal.integrated.inheritEnv": false,
     "terminal.integrated.sendKeybindingsToShell": true,
     "vim.textwidth": 120,
     "editor.rulers": [

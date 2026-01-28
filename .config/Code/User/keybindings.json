@@ -1,3 +1,27 @@
 // Place your key bindings in this file to override the defaults
 [
+    {
+        "key": "ctrl+b k",
+        "command": "opencode.addFilepathToTerminal"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "-opencode.addFilepathToTerminal"
+    },
+    {
+        "key": "ctrl+b o",
+        "command": "opencode.openTerminal"
+    },
+    {
+        "key": "ctrl+escape",
+        "command": "-opencode.openTerminal"
+    },
+    {
+        "key": "ctrl+b shift+o",
+        "command": "opencode.openNewTerminal"
+    },
+    {
+        "key": "ctrl+shift+escape",
+        "command": "-opencode.openNewTerminal"
+    }
 ]

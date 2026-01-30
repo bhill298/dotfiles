@@ -44,5 +44,9 @@
         "<C-s>": false,
         "<C-z>": false,
         "<C-f>": false
-    }
+    },
+    // disable copilot hints
+    "workbench.editor.empty.hint": "hidden",
+    "inlineChat.lineNaturalLanguageHint": false,
+    "terminal.integrated.initialHint": false
 }

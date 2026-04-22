@@ -48,5 +48,13 @@
     // disable copilot hints
     "workbench.editor.empty.hint": "hidden",
     "inlineChat.lineNaturalLanguageHint": false,
-    "terminal.integrated.initialHint": false
+    "terminal.integrated.initialHint": false,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+    "rust-analyzer.inlayHints.expressionAdjustmentHints.disableReborrows": false,
+    "rust-analyzer.inlayHints.genericParameterHints.const.enable": false,
+    "rust-analyzer.inlayHints.impliedDynTraitHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.renderColons": false
 }

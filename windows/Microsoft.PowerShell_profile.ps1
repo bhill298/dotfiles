@@ -1,4 +1,4 @@
-# can get through $profile (default %USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1)
+# can get through $profile (default %USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 or %USERPROFILE%\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 for pwsh.exe)
 Set-PSReadLineKeyHandler -Chord Ctrl-a -Function BeginningOfLine
 Set-PSReadLineKeyHandler -Chord Ctrl-e -Function EndOfLine
 Set-PSReadLineKeyHandler -Chord Ctrl+u -Function BackwardDeleteLine

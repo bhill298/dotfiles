@@ -1,0 +1,26 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions":
+    [
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[13;2u"
+            },
+            "id": "User.sendInput.ShiftEnterCustom"
+        }
+    ],
+    "keybindings": 
+    [
+        {
+            "id": "User.sendInput.ShiftEnterCustom",
+            "keys": "shift+enter"
+        }
+    ],
+    "schemes": [],
+    "themes": [],
+    "warning.largePaste": false,
+    "warning.multiLinePaste": "never"
+}

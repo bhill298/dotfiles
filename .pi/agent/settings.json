@@ -8,8 +8,6 @@
     "npm:pi-init",
     "npm:pi-wtf"
   ],
-  "defaultProvider": "google-vertex",
-  "defaultModel": "gemini-3-flash-preview",
   "hideThinkingBlock": true,
   "enableInstallTelemetry": false,
   "enableAnalytics": false,

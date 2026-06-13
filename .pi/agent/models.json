@@ -1,5 +1,28 @@
 {
   "providers": {
+    "google-vertex": {
+      "models": [
+        {
+          "id": "gemini-3.5-flash",
+          "name": "Gemini 3.5 Flash",
+          "apiId": "gemini-3.5-flash",
+          "publisher": "google",
+          "endpointType": "gemini",
+          "contextWindow": 1048576,
+          "maxTokens": 65535,
+          "input": ["text", "image"],
+          "reasoning": true,
+          "tools": true,
+          "cost": {
+            "input": 1.5,
+            "output": 9.0,
+            "cacheRead": 0.15,
+            "cacheWrite": 0
+          },
+          "region": "global"
+        }
+      ]
+    },
     "llama-server": {
       "baseUrl": "http://127.0.0.1:8099/v1",
       "api": "openai-completions",

@@ -5,22 +5,24 @@
     "npm:pi-subagents",
     "npm:@juicesharp/rpiv-ask-user-question",
     "npm:pi-claude-marketplace",
-    "npm:pi-init"
+    "npm:pi-init",
+    "npm:pi-wtf"
   ],
-  "defaultProvider": "llama-server",
-  "defaultModel": "gemma-4-31B-it-q4",
+  "defaultProvider": "google-vertex",
+  "defaultModel": "gemini-3-flash-preview",
   "hideThinkingBlock": true,
   "enableInstallTelemetry": false,
   "enableAnalytics": false,
   "compaction": {
-      "reserveTokens": 10000
+    "reserveTokens": 10000
   },
   "branchSummary": {
-      "reserveTokens": 10000
+    "reserveTokens": 10000
   },
   "retry": {
-      "maxRetries": 10
+    "maxRetries": 10
   },
   "enabledModels": [],
-  "prompts": []
+  "prompts": [],
+  "defaultThinkingLevel": "high"
 }

@@ -1,0 +1,26 @@
+{
+  "lastChangelogVersion": "0.79.2",
+  "packages": [
+    "npm:pi-web-access",
+    "npm:pi-subagents",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:pi-claude-marketplace",
+    "npm:pi-init"
+  ],
+  "defaultProvider": "llama-server",
+  "defaultModel": "gemma-4-31B-it-q4",
+  "hideThinkingBlock": true,
+  "enableInstallTelemetry": false,
+  "enableAnalytics": false,
+  "compaction": {
+      "reserveTokens": 10000
+  },
+  "branchSummary": {
+      "reserveTokens": 10000
+  },
+  "retry": {
+      "maxRetries": 10
+  },
+  "enabledModels": [],
+  "prompts": []
+}

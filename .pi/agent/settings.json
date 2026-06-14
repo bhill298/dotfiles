@@ -6,7 +6,8 @@
     "npm:@juicesharp/rpiv-ask-user-question",
     "npm:pi-claude-marketplace",
     "npm:pi-init",
-    "npm:pi-wtf"
+    "npm:pi-wtf",
+    "npm:pi-mcp-extension"
   ],
   "hideThinkingBlock": true,
   "enableInstallTelemetry": false,

@@ -1,0 +1,60 @@
+{
+  "packages": [
+    {
+      "source": "npm:pi-web-access",
+      "extensions": [
+        "-index.ts"
+      ],
+      "skills": [
+        "-skills\\librarian\\SKILL.md"
+      ]
+    },
+    {
+      "source": "npm:pi-subagents",
+      "extensions": [
+        "-src\\extension\\index.ts"
+      ],
+      "skills": [
+        "-skills\\pi-subagents\\SKILL.md"
+      ],
+      "prompts": [
+        "-prompts\\gather-context-and-clarify.md",
+        "-prompts\\parallel-cleanup.md",
+        "-prompts\\parallel-context-build.md",
+        "-prompts\\parallel-handoff-plan.md",
+        "-prompts\\parallel-research.md",
+        "-prompts\\parallel-review.md",
+        "-prompts\\review-loop.md"
+      ]
+    },
+    {
+      "source": "npm:@juicesharp/rpiv-ask-user-question",
+      "extensions": [
+        "-index.ts"
+      ]
+    },
+    {
+      "source": "npm:pi-claude-marketplace",
+      "extensions": [
+        "-extensions\\pi-claude-marketplace\\index.ts"
+      ]
+    },
+    {
+      "source": "npm:pi-init",
+      "skills": [
+        "-skills\\init\\SKILL.md"
+      ]
+    }
+    {
+      "source": "npm:pi-mcp-extension",
+      "extensions": [
+        "-src\\index.ts"
+      ]
+    }
+  ],
+  "defaultProvider": "llama-server",
+  "defaultModel": "gemma-4-31B-it-q4",
+  "skills": [
+    "EXCLUDING_HERE_DOESNT_WORK_THERE_IS_A_BUG"
+  ]
+}

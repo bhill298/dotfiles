@@ -10,7 +10,9 @@
     "npm:pi-mcp-extension",
     "npm:pi-local-agents-only",
     "npm:pi-updater",
-    "npm:@tmustier/pi-raw-paste"
+    "npm:@tmustier/pi-raw-paste",
+    "npm:@koltmcbride/pi-loop",
+    "npm:pi-plan"
   ],
   "hideThinkingBlock": true,
   "enableInstallTelemetry": false,

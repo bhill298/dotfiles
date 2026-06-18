@@ -8,7 +8,8 @@
     "npm:pi-init",
     "npm:pi-wtf",
     "npm:pi-mcp-extension",
-    "npm:pi-local-agents-only"
+    "npm:pi-local-agents-only",
+    "npm:pi-updater"
   ],
   "hideThinkingBlock": true,
   "enableInstallTelemetry": false,

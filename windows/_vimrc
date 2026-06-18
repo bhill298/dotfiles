@@ -27,3 +27,4 @@ vnoremap P "0P
 set noswapfile
 
 let asmsyntax="nasm"
+set ff=unix

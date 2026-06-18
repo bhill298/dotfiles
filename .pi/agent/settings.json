@@ -9,7 +9,8 @@
     "npm:pi-wtf",
     "npm:pi-mcp-extension",
     "npm:pi-local-agents-only",
-    "npm:pi-updater"
+    "npm:pi-updater",
+    "npm:@tmustier/pi-raw-paste"
   ],
   "hideThinkingBlock": true,
   "enableInstallTelemetry": false,

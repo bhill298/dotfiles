@@ -7,7 +7,8 @@
     "npm:pi-claude-marketplace",
     "npm:pi-init",
     "npm:pi-wtf",
-    "npm:pi-mcp-extension"
+    "npm:pi-mcp-extension",
+    "npm:pi-local-agents-only"
   ],
   "hideThinkingBlock": true,
   "enableInstallTelemetry": false,

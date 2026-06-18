@@ -6,6 +6,8 @@
 
 " Function/cmd definitions not in plugins
 
+set fileformats=unix
+
 " see https://vim.fandom.com/wiki/Move_current_window_between_tabs
 function MoveToPrevTab()
   " there is only one window

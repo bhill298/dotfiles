@@ -1,0 +1,21 @@
+personality = "pragmatic"
+model_reasoning_summary = "detailed"
+
+[windows]
+sandbox = "elevated"
+
+[features]
+memories = false
+
+[analytics]
+enabled = false
+
+[tui]
+vim_mode_default = false
+status_line = ["model-with-reasoning", "current-dir", "git-branch", "weekly-limit", "context-window-size", "used-tokens", "fast-mode"]
+
+[otel]
+exporter = "none"
+metrics_exporter = "none"
+log_user_prompt = false
+trace_exporter = "none"

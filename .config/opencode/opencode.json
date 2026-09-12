@@ -4,7 +4,8 @@
   "small_model": "something/invalid",
   "shell": "bash",
   "plugin": [
-      "@adrianlzt/opencode-show-tools"
+      "@adrianlzt/opencode-show-tools",
+      "@bybrawe/opencode-goal (INSTALL WITH npx -y @bybrawe/opencode-loop@latest --with-goals --without-loop-goals)"
   ],
   "experimental": {
     "disable_paste_summary": true

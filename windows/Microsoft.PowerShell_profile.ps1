@@ -22,6 +22,17 @@ function Invoke-Environment {
     }}
 }
 
+function prompt {
+  $loc = $executionContext.SessionState.Path.CurrentLocation;
+
+  $out = ""
+  if ($loc.Provider.Name -eq "FileSystem") {
+    $out += "$([char]27)]9;9;`"$($loc.ProviderPath)`"$([char]27)\"
+  }
+  $out += "PS $loc$('>' * ($nestedPromptLevel + 1)) ";
+  return $out
+}
+
 # vcvars32.bat vcvars64.bat needs to be on path
 # e.g. C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\
 function vcvars64 { Invoke-Environment  $((get-command vcvars64.bat).Path) }

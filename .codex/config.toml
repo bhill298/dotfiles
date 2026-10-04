@@ -22,9 +22,109 @@ enabled = false
 vim_mode_default = false
 pet = "custom:Pancake"
 status_line = ["model-with-reasoning", "current-dir", "git-branch", "weekly-limit", "context-window-size", "context-used", "fast-mode", "five-hour-limit"]
+status_line_use_colors = true
+screen_reader_detection_done = true
+session_picker_view = "dense"
+resume_cwd = "session"
 
 [otel]
 exporter = "none"
 metrics_exporter = "none"
 log_user_prompt = false
 trace_exporter = "none"
+
+[notice]
+hide_rate_limit_model_nudge = true
+
+[desktop]
+followUpQueueMode = "steer"
+conversationDetailMode = "STEPS_COMMANDS"
+ambient-suggestions-enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-three-statement-forecast\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-team-alignment\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-system-design\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-strategy-memorandum\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-simple-light-mode\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-simple-dark-mode\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-sales-pipeline\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-project-tracker\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-project-kickoff\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-operating-review\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-operating-calendar\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-minimal-letterhead\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-market-trends-report\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-legal-memorandum\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-investment-committee-memo\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-financial-budget\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-experiment-analysis\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-design-report\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-business-review\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-analytics-dashboard\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-experiment-analysis\SKILL.md'
+enabled = false
+
+[[skills.config]]
+path = 'plugins\cache\openai-curated-remote\openai-templates\0.1.1\skills\artifact-template-financial-budget\SKILL.md'
+enabled = false

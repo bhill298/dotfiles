@@ -1,7 +1,5 @@
 personality = "pragmatic"
 model_reasoning_summary = "detailed"
-model = "gpt-5.6-sol"
-model_reasoning_effort = "medium"
 approvals_reviewer = "auto_review"
 sandbox_mode = "workspace-write"
 approval_policy = "on-request"

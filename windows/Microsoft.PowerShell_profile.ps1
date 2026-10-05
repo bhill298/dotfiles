@@ -33,6 +33,11 @@ function prompt {
   return $out
 }
 
+# requires PSFzf and fzf
+# winget install fzf
+# Install-Module -Name PSFzf -Scope CurrentUser
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
+
 # vcvars32.bat vcvars64.bat needs to be on path
 # e.g. C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\
 function vcvars64 { Invoke-Environment  $((get-command vcvars64.bat).Path) }

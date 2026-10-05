@@ -1,0 +1,16 @@
+{
+  "artifactReviewPolicy": "agent-decides",
+  "colorScheme": "dark",
+  "editor": "vim",
+  "enableTerminalSandbox": true,
+  "notifications": true,
+  "runningLightSpeed": "fast",
+  "showFeedbackSurvey": false,
+  "showTips": false,
+  "statusLine": {
+    "type": "",
+    "command": "",
+    "enabled": true
+  },
+  "toolPermission": "always-proceed"
+}

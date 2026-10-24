@@ -25,6 +25,7 @@ status_line_use_colors = true
 screen_reader_detection_done = true
 session_picker_view = "dense"
 resume_cwd = "session"
+show_tooltips = false
 
 [otel]
 exporter = "none"

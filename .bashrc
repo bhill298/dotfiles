@@ -76,7 +76,7 @@ alias fuck='sudo $(history -p \!\!)'
 # make the shell expand aliases for sudo
 alias sudo="sudo "
 alias la='ls -A'
-alias ll=ls -Al'
+alias ll='ls -Al'
 # Force tmux to assume the terminal supports 256 colours
 alias tmux='tmux -2'
 alias ctags='ctags --links=no'
@@ -159,7 +159,7 @@ vim() {
 }
 
 notes() {
-  local count=$(1:-6}
+  local count=${1:-6}
   ls --hyperlink=always -Altd ~/notes/* | head -n "$count"
 }
 

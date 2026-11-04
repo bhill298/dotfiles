@@ -4,6 +4,10 @@ approvals_reviewer = "auto_review"
 sandbox_mode = "workspace-write"
 approval_policy = "on-request"
 
+[shell_environment_policy]
+ignore_default_excludes = true
+inherit = "all"
+
 [sandbox_workspace_write]
 network_access = true
 

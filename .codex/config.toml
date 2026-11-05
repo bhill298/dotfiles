@@ -3,7 +3,8 @@ model_reasoning_summary = "detailed"
 approvals_reviewer = "auto_review"
 sandbox_mode = "workspace-write"
 approval_policy = "on-request"
-daybreak = true
+# this will fail if the model (right now just astra) doesn't support daybreak, so off by default
+daybreak = false
 
 [shell_environment_policy]
 ignore_default_excludes = true

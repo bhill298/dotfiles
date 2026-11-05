@@ -3,6 +3,7 @@ model_reasoning_summary = "detailed"
 approvals_reviewer = "auto_review"
 sandbox_mode = "workspace-write"
 approval_policy = "on-request"
+daybreak = true
 
 [shell_environment_policy]
 ignore_default_excludes = true
@@ -24,7 +25,7 @@ enabled = false
 auto_recap = false
 vim_mode_default = false
 pet = "custom:Pancake"
-status_line = ["model-with-reasoning", "current-dir", "git-branch", "weekly-limit", "context-window-size", "context-used", "fast-mode", "five-hour-limit"]
+status_line = ["model-with-reasoning", "current-dir", "git-branch", "weekly-limit", "context-window-size", "context-used", "fast-mode", "five-hour-limit", "daybreak"]
 status_line_use_colors = true
 screen_reader_detection_done = true
 session_picker_view = "dense"

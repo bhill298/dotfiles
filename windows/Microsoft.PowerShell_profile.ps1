@@ -33,6 +33,28 @@ function prompt {
   return $out
 }
 
+Remove-Item Alias:rm -ErrorAction SilentlyContinue
+
+# Make it perform like linux (don't need commas for multiple files, -rf works)
+function rm {
+    param(
+        [switch] $rf,
+
+        [Alias('r')]
+        [switch] $Recurse,
+
+        [Alias('f')]
+        [switch] $Force,
+
+        [Parameter(Mandatory, Position = 0, ValueFromRemainingArguments)]
+        [string[]] $Path
+    )
+
+    Remove-Item -Path $Path `
+        -Recurse:($Recurse -or $rf) `
+        -Force:($Force -or $rf)
+}
+
 # requires PSFzf and fzf
 # winget install fzf
 # Install-Module -Name PSFzf -Scope CurrentUser

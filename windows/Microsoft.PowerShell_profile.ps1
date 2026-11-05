@@ -1,4 +1,5 @@
 # can get through $profile (default %USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 or %USERPROFILE%\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 for pwsh.exe)
+# Can alias one to the other like this: . (Join-Path ([Environment]::GetFolderPath('MyDocuments')) 'WindowsPowerShell\Microsoft.PowerShell_profile.ps1')
 Set-PSReadLineKeyHandler -Chord Ctrl-a -Function BeginningOfLine
 Set-PSReadLineKeyHandler -Chord Ctrl-e -Function EndOfLine
 Set-PSReadLineKeyHandler -Chord Ctrl+u -Function BackwardDeleteLine
